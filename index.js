@@ -9,7 +9,7 @@ const app = express();
 
 app.set("port", process.env.PORT || 3000);
 
-app.get("/", (req, res) => {
+app.post("/", (req, res) => {
   client.messages
     .create({
       body: "This is a test Message",
